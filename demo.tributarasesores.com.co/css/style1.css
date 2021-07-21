@@ -37,7 +37,7 @@ Main Components
     position: relative;
     height: 230px;
     width: 100%;
-    max-width: 1100px;
+    
     margin: 0 auto;
 }
 .cd-horizontal-timeline .events-wrapper {
@@ -45,7 +45,7 @@ Main Components
     height: 100%;
     margin: 0 40px;
     overflow: hidden;
-    width: 1022px;
+    /* width: 1022px; */
 }
 .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
     /* these are used to create a shadow effect at the sides of the timeline */
@@ -104,7 +104,7 @@ Main Components
 }
 .cd-horizontal-timeline .events a {
     position: absolute;
-	width: 250px;
+	width: 185px;
     bottom: 0;
     z-index: 2;
     text-align: center;
@@ -446,7 +446,7 @@ Main Components
     .cd-horizontal-timeline .events {
         margin-top: 0px;
     }
-    .cd-horizontal-timeline .events-wrapper {
+    /* .cd-horizontal-timeline .events-wrapper {
         width: auto;
-    }
+    } */
 }

@@ -1875,9 +1875,11 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
     background-color: #8D521A;
 
-    padding: 35px 30px;
+    padding: 25px 20px;
 
-    border-radius: 50px;
+    border-radius: 45px;
+
+    zoom: 1.5;
 
 }
 
@@ -1885,9 +1887,11 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
     background-color: #8D521A;
 
-    padding: 35px 30px;
+    padding: 25px 20px;
 
-    border-radius: 50px;
+    border-radius: 45px;
+
+    zoom: 1.5;
 
 }
 
@@ -1895,9 +1899,11 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
     background-color: #8D521A;
 
-    padding: 35px 30px;
+    padding: 25px 20px;
 
-    border-radius: 50px;
+    border-radius: 45px;
+
+    zoom: 1.5;
 
 }
 
@@ -1907,10 +1913,10 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
     height: auto;
 
-    margin: 0 0 33px 0px;
+    margin: 30px 0 ;
 
-    margin-top: 29px;
-
+    position: relative;
+    top: -2px;
 }
 
 .valor .v3 i svg {
@@ -1919,10 +1925,10 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
     height: auto;
 
-    margin: 0 0 33px 0px;
+    margin: 30px 0 ;
 
-    margin-top: 29px;
-
+    position: relative;
+    top: -2px;
 }
 
 .valor .v4 i svg {
@@ -1931,10 +1937,10 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
     height: auto;
 
-    margin: 0 0 33px 0px;
+    margin: 30px 0 ;
 
-    margin-top: 29px;
-
+    position: relative;
+    top: -2px;
 }
 
 .valor .v2 svg .st0 {
@@ -2026,6 +2032,8 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
     margin: 25px;
 
     padding: 25px;
+
+    height: 265px;
 
 }
 
@@ -2637,7 +2645,7 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 
-        width: auto;
+        width: 81%;
 
         margin: 25px;
 
@@ -3430,12 +3438,6 @@ body#inm .container .navbar .collapse #menu li:nth-child(1) a, body#sem .contain
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
-
-    .owl-carousel.owl-drag .owl-item {
-
-        width: 315.25px !important;
-
-    }
 
     .container .equipo .text-eq #eq1 {
 

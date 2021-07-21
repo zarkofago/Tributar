@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	var timelines = $('.cd-horizontal-timeline'),
-		eventsMinDistance = 60;
+		eventsMinDistance = 50;
 
 	(timelines.length > 0) && initTimeline(timelines);
 
@@ -70,6 +70,7 @@ jQuery(document).ready(function($){
 		//retrieve translateX value of timelineComponents['eventsWrapper']
 		var translateValue = getTranslateValue(timelineComponents['eventsWrapper']),
 			wrapperWidth = Number(timelineComponents['timelineWrapper'].css('width').replace('px', ''));
+
 		//translate the timeline to the left('next')/right('prev') 
 		(string == 'next') 
 			? translateTimeline(timelineComponents, translateValue - wrapperWidth + eventsMinDistance, wrapperWidth - timelineTotWidth)
@@ -118,10 +119,16 @@ jQuery(document).ready(function($){
 	}
 
 	function updateFilling(selectedEvent, filling, totWidth) {
+		// fix 
+		// assets/js/app.js	
+		// js/main.js
+		totWidth = localStorage.getItem('timelineWidth');
+
 		//change .filling-line length according to the selected event
 		var eventStyle = window.getComputedStyle(selectedEvent.get(0), null),
 			eventLeft = eventStyle.getPropertyValue("left"),
-			eventWidth = eventStyle.getPropertyValue("width");
+			eventWidth = eventStyle.getPropertyValue("width");			
+
 		eventLeft = Number(eventLeft.replace('px', '')) + Number(eventWidth.replace('px', ''))/2;
 		var scaleValue = eventLeft/totWidth;
 		setTransformValue(filling.get(0), 'scaleX', scaleValue);
